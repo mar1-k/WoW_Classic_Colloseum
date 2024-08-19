@@ -1,0 +1,26 @@
+{
+    "image": "gcr.io/cata-colosseum/arena_match_parser:latest",
+    "sdk_info": {
+      "language": "PYTHON"
+    },
+    "metadata": {
+      "name": "Arena Log Parser",
+      "description": "Parses WoW arena logs and outputs individual matches",
+      "parameters": [
+        {
+          "name": "input_file",
+          "label": "Input File",
+          "help_text": "GCS path to the input file",
+          "param_type": "TEXT",
+          "required": true
+        },
+        {
+          "name": "output_dir",
+          "label": "Output Directory",
+          "help_text": "GCS path to the output directory",
+          "param_type": "TEXT",
+          "required": true
+        }
+      ]
+    }
+  }
